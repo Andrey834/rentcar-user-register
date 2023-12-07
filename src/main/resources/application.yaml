@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://supero:5432/rentcar
+    username: postgres
+    password: grand1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  docker:
+    compose:
+      enabled: false
