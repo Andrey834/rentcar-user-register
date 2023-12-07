@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://supero:5432/rentcar
     username: postgres
-    password: grand1
+    password: *****
   jpa:
     hibernate:
       ddl-auto: create-drop
