@@ -1,11 +1,17 @@
 spring:
   datasource:
-    url: jdbc:postgresql://supero:5432/rentcar
-    username: postgres
-    password: *****
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
   docker:
     compose:
       enabled: false
+  mail:
+    protocol: smtp
+    properties:
+      "mail.transport.protocol": smtp
+      "mail.smtp.auth": true
+      "mail.smtp.starttls.enable": true
