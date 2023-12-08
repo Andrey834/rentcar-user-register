@@ -20,7 +20,7 @@ import ru.superu.rentcarregister.service.PersonService;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/users/register")
-@CrossOrigin(origins = "http://localhost:4200", methods = RequestMethod.POST, maxAge = 3600)
+@CrossOrigin(origins = "http://192.168.0.183:4200", methods = RequestMethod.POST, maxAge = 3600)
 public class PersonController {
     private final PersonService service;
 

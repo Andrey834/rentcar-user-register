@@ -50,6 +50,8 @@ public class Person {
     @Column(length = 300, unique = true)
     @NotBlank
     private String email;
+    private boolean enabled = false;
+    private String phone;
     @Past
     @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(length = 50, nullable = false)
