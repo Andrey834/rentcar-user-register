@@ -105,7 +105,7 @@ class _FinancialTab extends StatelessWidget {
             else if (provider.report == null)
               const Expanded(child: Center(child: Text('Нет данных')))
             else
-              Expanded(child: _ReportBody(report: provider.report!)),
+              Expanded(child: _ReportBody(r: provider.report!)),
           ],
         );
       },
