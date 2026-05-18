@@ -1,24 +1,24 @@
-HELP.md
+### Maven ###
 target/
 .mvn/wrapper/maven-wrapper.jar
 **/src/main/**/target/
 **/src/test/**/target/
-docker-compose.yaml
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+### Spring Boot ###
+HELP.md
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/modules.xml
 
 ### NetBeans ###
 /nbproject/private/
@@ -32,3 +32,38 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### Environment & Secrets ###
+.env
+.env.*
+!.env.example
+*.secret
+application-local.yaml
+application-local.yml
+application-prod.yaml
+application-prod.yml
+
+### OS ###
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+### Logs ###
+*.log
+logs/
+
+### FastRequest Plugin ###
+.fastRequest/
+
+### Docker ###
+# docker-compose.yaml is tracked intentionally

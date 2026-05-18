@@ -6,6 +6,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
   docker:
     compose:
       enabled: false
@@ -15,3 +18,25 @@ spring:
       "mail.transport.protocol": smtp
       "mail.smtp.auth": true
       "mail.smtp.starttls.enable": true
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: alpha
+    tags-sorter: alpha
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    ru.superu.rentcarregister: INFO
+    org.hibernate.SQL: DEBUG
