@@ -65,5 +65,21 @@ logs/
 ### FastRequest Plugin ###
 .fastRequest/
 
+### Flutter ###
+rentcar-flutter/.dart_tool/
+rentcar-flutter/.flutter-plugins
+rentcar-flutter/.flutter-plugins-dependencies
+rentcar-flutter/.packages
+rentcar-flutter/build/
+rentcar-flutter/android/.gradle/
+rentcar-flutter/android/local.properties
+rentcar-flutter/ios/.symlinks/
+rentcar-flutter/ios/Flutter/App.framework
+rentcar-flutter/ios/Flutter/Flutter.framework
+rentcar-flutter/ios/Flutter/Generated.xcconfig
+rentcar-flutter/ios/Flutter/flutter_export_environment.sh
+rentcar-flutter/ios/Pods/
+rentcar-flutter/*.g.dart
+
 ### Docker ###
 # docker-compose.yaml is tracked intentionally
